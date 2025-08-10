@@ -1,0 +1,34 @@
+Graph: A set of vertices/nodes and edges(connections between the nodes).
+
+Types of Graphs:
+1. Undirected Graph
+2. Directed Graph
+3. Weighted Graph
+4. Unweighted Graph 
+5. Cyclic Graph 
+6. Acyclic Graph 
+
+Notes:
+
+1. If two nodes a and b are connected with each other, they are said to be 
+   neighbours.
+2. Degree
+   -> In an undirected graph degree of a node is defined as the number of edges 
+      connected to the node.
+   -> In a directed graph:
+      i) In-degree - Number of edges coming into the node 
+      ii) Out-degree - Number of edges going out from the node 
+3. In an acyclic, connected, undirected graph with n nodes, there are exactly 
+   n - 1 edges.
+
+Taking input of a graph in 2 ways:
+
+1. By using Matrix 
+   Ex: int matrix[n][m];
+2. By using adjacency list (an array of vectors) 
+   Ex: vector<int> adj[n];
+
+-> We prefer to take the input using adjacency list rather than using a 
+   matrix. 
+-> Because, the space required to take the input using a matrix is O(n ^ 2)
+   while if we use the adjacency list, it can be done just in O(n + m)
